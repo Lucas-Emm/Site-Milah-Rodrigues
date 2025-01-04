@@ -1,0 +1,74 @@
+#ebooks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color-primary-1);
+}
+
+.ebooks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    margin-top: 10px;
+    align-items: center;
+}
+.ebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border-radius: 20px;*/
+    gap: 20px;
+    width: 25%;
+    padding: 10px;
+    background-color: var(--color-neutral-0)fff;
+    box-shadow: (0px 0px 12px 4px rgba(0,0,0,0.5));
+    /*position: relative;
+    overflow: hidden;*/
+}
+
+
+.ebook-description{
+    color: #434343;
+    text-align: center;
+}
+
+
+
+.ebook-art{
+    width: 300px;
+    height: 420px;
+}
+
+.ebook-link{
+    text-decoration: none;
+}
+@media screen and (max-width: 1170px){
+    #ebooks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ebook{
+        /* calculo pra colcar os cards de 2 em 2 
+        50% é o tamanho do card em relação a tela
+        18px é o tamnho do gap do dish */
+        width: calc(50% - 18px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .ebooks{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ebook{
+    width: calc(100%);
+
+    }
+    #menu .section-subtitle{
+        text-align: center;
+    }
+}
