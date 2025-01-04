@@ -1,0 +1,78 @@
+#sobre{
+    display: flex;
+   padding-bottom: 0%;
+    background: var(--color-primary-1);
+}
+.sobremin{
+    
+    align-items: center;
+}
+
+.sobre-title-description{
+    padding-top: 3em;
+    width: 75%;
+}
+.sobre-image{
+    /*display: flex;
+    align-items: start;
+    justify-content: end;*/
+    width: 400px;
+    height: 100%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1170px){
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .sobre-image{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 70%;
+        height: 700%;
+        z-index: 2;
+    }
+
+}
+@media screen and (max-width: 600px){
+    #sobre{
+       
+       position: relative;
+        
+        
+    }
+    #sobre:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url(/src/img/IMG-20240923-WA0057.png);
+        background-position: center;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        -webkit-background-size: cover;
+  -moz-background-size: cover
+    }
+    
+    .sobre-image{
+        height: 450px;
+        width: 300px;
+    }
+    .sobre-title-description{
+        align-items: center;
+        
+        width: 100%;
+    }
+
+}
